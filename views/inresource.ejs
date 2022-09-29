@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcadEasy - Resource</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="navigation">
+        <a class="nav__logo" href="/">AcadEasy</a>
+        <div class="nav__op">
+            <a class="nav__op__link" href="">Web Tech</a>
+        </div>
+        <div class="nav__burger">
+            <div class="nav__burger__l1"></div>
+            <div class="nav__burger__l2"></div>
+            <div class="nav__burger__l3"></div>
+        </div>
+    </div>
+    <div class="body">
+        <a href="/resource/<%=resource.resource%>/pdf" class="openpdfbtn">Open Lab Pdf</a>
+        <div class="notes__header">Notes</div>
+        <div class="notes">
+            <%Object.values(resource.notes).map((n)=>{%>
+            <div class="note">
+                <div class="note__title"><%=n.title%></div>
+                <div class="note__body"><%=n.body%></div>
+            </div>
+            <%});%>
+        </div>
+        <div class="notes__header">Links</div>
+        <div class="notes">
+            <%Object.values(resource.links).map((l)=>{%>
+            <div class="note">
+                <a class="note__title" href="<%=l.link%>" target="_blank"><%=l.title%></a>
+            </div>
+            <%});%>
+        </div>
+    </div>
+    <div class="footer">
+        Made with ❤️ for us students
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+    "lab01":{
+        "resource":"lab01",
+        "notes":{
+            "01":{
+                "title":"HTML Full Form",
+                "body":"Hyper Text Markup Language"
+                },
+            "02":{
+                "title":"What is the meaning of Hyper Text",
+                "body":"Text inside a Text"
+                },
+            "03":{
+                "title":"What is HTML",
+                "body":"HTML (HyperText Markup Language) is the code that is used to structure a web page and its content. It is the skeleton of a web page."
+                },
+            "04":{
+                "title":"Full form of CSS",
+                "body":"Cascading Style Sheets"
+                },
+            "05":{
+                "title":"What is CSS",
+                "body":"CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes."
+                }
+            },
+            "links":{
+                "01":{
+                    "title":"Example HTML Code",
+                    "link":"https://www.w3schools.com/html/default.asp"
+                    },
+                "02":{
+                    "title":"Example of CSS",
+                    "link":"https://www.w3schools.com/css/default.asp"
+                    }
+            }
+        }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcadEasy</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="navigation">
+        <a class="nav__logo" href="/">AcadEasy</a>
+        <div class="nav__op">
+            <a class="nav__op__link" href="">Web Tech</a>
+        </div>
+        <div class="nav__burger">
+            <div class="nav__burger__l1"></div>
+            <div class="nav__burger__l2"></div>
+            <div class="nav__burger__l3"></div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="resources">
+            <%Object.keys(resources).map((r)=>{%>
+            <a class="resource" href="/resource/<%=r%>">
+                <img src="../assets/<%=r%>.png" class="resource__img">
+            </a>
+            <%})%>
+        </div>
+    </div>
+    <div class="footer">
+        Made with ❤️ for us students
+    </div>
+</body>
+</html>

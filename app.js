@@ -18,6 +18,6 @@ app.get('/resource/:resourcename/pdf', (req, res) => {
     res.render('pdf',{pdfname:req.params.resourcename});
 })
 
-app.listen(port, () => {
-  console.log(`App listening on port ${port}`)
+app.listen(process.env.PORT || 80, () => {
+  console.log('App listening on port 80')
 })

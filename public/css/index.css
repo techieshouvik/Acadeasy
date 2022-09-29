@@ -118,4 +118,16 @@
     .nav__op{
         display:none;
     }
+    .openpdfbtn{
+        width:100%;
+    }
+    .resources{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .resource__img{
+        height:210px;
+        width:210px;
+    }
 }

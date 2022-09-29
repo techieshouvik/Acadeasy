@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 8080
+const port = 80
 const recs = require('./resources/bcawebtech.json')
 
 app.set("view engine", "ejs");
@@ -19,5 +19,5 @@ app.get('/resource/:resourcename/pdf', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`App listening on port ${port}`)
 })
